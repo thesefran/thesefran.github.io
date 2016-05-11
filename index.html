@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas</title>
+
+  </head>
+  <style>
+  input[type="text"] {
+    width: 100px;
+  }
+  </style>
+  <body>
+    <canvas id="canvas-id" width="1000" height="1000"></canvas>
+    <button onclick="draw()">Draw</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="loopbutton()">Loop</button>
+    <button onclick="fill()">Fill</button>
+    <button onclick="randomColour()">Random Colour</button>
+    <input type="text" id="input-red" name="inputRed" placeholder="input red value" >
+    <input type="text" id="input-green" name="inputGreen" placeholder="input green value">
+    <input type="text" id="input-blue" name="inputBlue" placeholder="input blue value">
+
+    <input type="text" id="pixel-size" name="pixel-size" value="50">
+    <br>
+    <input type="text" id="canvas-width" name="canvasWidth" value="610">
+    <input type="text" id="canvas-height" name="canvasHeight" value="610">
+    <button onclick="saveImage()">Save Image</button>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
