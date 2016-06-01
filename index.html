@@ -2,30 +2,50 @@
 <html>
   <head>
     <title>Canvas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   </head>
   <style>
   input[type="text"] {
-    width: 100px;
+    width: 86px;
   }
+  /*canvasDiv.*/
   </style>
+
   <body>
-    <canvas id="canvas-id" width="1000" height="1000"></canvas>
-    <button onclick="draw()">Draw</button>
+
+    <div class="container-fluid">
+  <h1>~Welcome.:). </h1>
+    <p>Fill in the colour value boxes with <b>R</b>(ed), <b>G</b>(reen) and <b>B</b>(lue) values, or press <b>Random Colour</b> to generate a colour ( ..may hurt your head:\ )<br>
+        then press <b>draw</b> to generate a block (from the <b>pixel size</b> currently set to 50) or press <b>loop</b> to run along the grid<br>
+      (the grid can be changed using the dimension boxes, which are currently set at <b>610</b> x <b>610</b> --<br>
+    this will be the size of the .PNG file that you can export your image as by pressing the <b>save image</b> button<br>
+  ~<i>hint: try setting the size to your phone or tablet screen dimensions to generate a :)<b>background</b>~ .</i>!)</p>
+      <h1>enjoy ! </h1><p>!</p>
+  <div class="row">
+    <div class="col-xs-6 col-sm-3">
+      <div class="canvasDiv">
+        <canvas id="canvas-id" width="1000" height="1000"></canvas>
+      </div>
+    </div>
+    <!-- Add clearfix for only the required viewport (allows it to stack) -->
+  <div class="clearfix visible-xs"></div>
+  <div class="col-xs-6 col-sm-3"><button onclick="draw()"><b>Draw</button>
     <button onclick="reset()">Reset</button>
     <button onclick="loopbutton()">Loop</button>
-    <button onclick="fill()">Fill</button>
+    <!-- <button onclick="fill()">Fill AllX</button> -->
     <button onclick="randomColour()">Random Colour</button>
-    <input type="text" id="input-red" name="inputRed" placeholder="input red value" >
-    <input type="text" id="input-green" name="inputGreen" placeholder="input green value">
-    <input type="text" id="input-blue" name="inputBlue" placeholder="input blue value">
+    <input type="text" id="input-red" name="inputRed" placeholder="R value X" >
+    <input type="text" id="input-green" name="inputGreen" placeholder="G value X">
+    <input type="text" id="input-blue" name="inputBlue" placeholder="B value X">
 
     <input type="text" id="pixel-size" name="pixel-size" value="50">
     <br>
     <input type="text" id="canvas-width" name="canvasWidth" value="610">
     <input type="text" id="canvas-height" name="canvasHeight" value="610">
-    <button onclick="saveImage()">Save Image</button>
-
+    <button onclick="saveImage()">Save Image</button></div>
+  </div>
+</div>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
